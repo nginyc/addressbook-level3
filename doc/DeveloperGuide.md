@@ -111,6 +111,11 @@ Use case resumes at step 3
 2. Should be able to hold up to 1000 persons.
 3. Should come with automated unit tests and open source code.
 4. Should favor DOS style commands over Unix-style commands.
+5. All commands should finish executing in at most 1 second.
+6. Should start-up in at most 2 seconds.
+7. All command keywords should be at most 15 characters long.
+8. Program should not exceed 25MB in size.
+9. Program should not be racist or sexist in any way.
 
 ## Appendix D : Glossary
 

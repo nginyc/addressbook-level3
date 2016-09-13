@@ -45,9 +45,12 @@ Priority | As a ... | I want to ... | So that I can...
 `* * *` | user | add a new person |
 `* * *` | user | delete a person | remove entries that I no longer need
 `* * *` | user | find a person by name | locate details of persons without having to go through the entire list
+`* * *` | user | edit an existing person's contact details | update a person's contact details when it is outdated or keyed in wrongly
+`* *` | user | find a person by any contact detail | locate a person by his phone, address, or any contact detail
 `* *` | user | hide [private contact details](#private-contact-detail) by default | minimize chance of someone else seeing them by accident
+`* *` | seasoned user | add multiple email address and phone numbers to the same person | add more contact details to a person, especially when it is likely that a person has multiple email address and phone numbers
+`*` | user with many persons in the address book | associate a person with multiple tags | locate a person more easily with tags
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
-
 
 ## Appendix B : Use Cases
 

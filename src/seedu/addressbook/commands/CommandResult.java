@@ -16,13 +16,18 @@ public class CommandResult {
     /** The list of persons that was produced by the command */
     private final List<? extends ReadOnlyPerson> relevantPersons;
 
-    public CommandResult(String feedbackToUser) {
+    /** Whether the command had an error */
+    public final boolean hasError;
+    
+    public CommandResult(String feedbackToUser, boolean hasError) {
         this.feedbackToUser = feedbackToUser;
+        this.hasError = hasError;
         relevantPersons = null;
     }
 
-    public CommandResult(String feedbackToUser, List<? extends ReadOnlyPerson> relevantPersons) {
+    public CommandResult(String feedbackToUser, boolean hasError, List<? extends ReadOnlyPerson> relevantPersons) {
         this.feedbackToUser = feedbackToUser;
+        this.hasError = hasError;
         this.relevantPersons = relevantPersons;
     }
 
@@ -32,5 +37,7 @@ public class CommandResult {
     public Optional<List<? extends ReadOnlyPerson>> getRelevantPersons() {
         return Optional.ofNullable(relevantPersons);
     }
+    
+    
 
 }

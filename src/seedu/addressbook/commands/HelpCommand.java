@@ -25,6 +25,6 @@ public class HelpCommand extends Command {
 
     @Override
     public CommandResult execute() {
-        return new CommandResult(MESSAGE_ALL_USAGES);
+        return new CommandResult(MESSAGE_ALL_USAGES, false);
     }
 }

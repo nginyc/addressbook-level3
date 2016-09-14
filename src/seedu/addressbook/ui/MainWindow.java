@@ -51,7 +51,15 @@ public class MainWindow {
                 return;
             }
             displayResult(result);
-            clearCommandInput();
+            
+            // If command had an error, indicate to user
+            if (result.hasError) {
+                commandInput.getStyleClass().add("error");
+            } else {
+                commandInput.getStyleClass().remove("error");
+                clearCommandInput();
+            }
+            
         } catch (Exception e) {
             display(e.getMessage());
             throw new RuntimeException(e);

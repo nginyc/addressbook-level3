@@ -8,6 +8,10 @@
     -fx-control-inner-background: derive(#1d1d1d,20%);
 }
 
+.text-field.error {
+    -fx-text-fill: red;
+}
+
 .text-area {
     -fx-background-color: black;
     -fx-control-inner-background: black;

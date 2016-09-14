@@ -86,7 +86,9 @@ Use case ends.
 3. AddressBook prompts for new name of tag
 4. User specifies new name of tag
 5. AddressBook verifies that new name of tag is valid
-6. AddressBook renames tag in all contact details
+6. AddressBook prompts for confirmation
+7. User specifies confirmation
+8. AddressBook renames tag in all contact details
 <br>
 Use case ends.
 

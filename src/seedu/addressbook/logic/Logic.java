@@ -1,10 +1,10 @@
 package seedu.addressbook.logic;
 
 import seedu.addressbook.commands.Command;
+import seedu.addressbook.commands.CommandFactory;
 import seedu.addressbook.commands.CommandResult;
 import seedu.addressbook.data.AddressBook;
 import seedu.addressbook.data.person.ReadOnlyPerson;
-import seedu.addressbook.parser.Parser;
 import seedu.addressbook.storage.Storage;
 
 import java.util.Collections;
@@ -61,7 +61,7 @@ public class Logic {
      * @throws Exception if there was any problem during command execution.
      */
     public CommandResult execute(String userCommandText) throws Exception {
-        Command command = new Parser().parseCommand(userCommandText);
+        Command command = new CommandFactory().parseCommand(userCommandText);
         CommandResult result = execute(command);
         recordResult(result);
         return result;
